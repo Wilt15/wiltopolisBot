@@ -1,0 +1,23 @@
+{
+    "XP Booster": {
+      "id":"1",
+      "name":"XP Booster",
+      "type":"Abilities",
+      "price":"300",
+      "desc":"This will give you a 1.5x XP Booster for 2 weeks!"
+    },
+    "Coin Booster": {
+      "id":"2",
+      "name":"Coin Booster",
+      "type":"Abilities",
+      "price":"275",
+      "desc":"This will give you a 1.5x Coin Booster for 2 weeks!"
+    },
+    "Nickname": {
+      "id":"3",
+      "name":"Nickname",
+      "type":"Abilities",
+      "price":"225",
+      "desc":"This will change your name to whatever you want!"
+    }
+}
