@@ -4,8 +4,7 @@ const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core-discord');
 const youtube = new YouTube(GOOGLE_API_KEY);
 
-module.exports.run = async (bot, message) => {
-  const args = message.content.split(' ');
+module.exports.run = async (bot, message, args) => {
 	const searchString = args.join(' ');
 	const url = args[1] ? args[1].replace(/<(.+)>/g, '$1') : '';
 	const serverQueue = bot.queue.get(message.guild.id);
