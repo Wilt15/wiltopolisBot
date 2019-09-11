@@ -325,7 +325,7 @@ bot.on('ready', async () => {
 	}, 5000);
 });
 
-/*bot.on('presenceUpdate', (oldPresence, newPresence) => {
+bot.on('presenceUpdate', (oldPresence, newPresence) => {
   if (newPresence.activity != null && !newPresence.equals(oldPresence) && newPresence.activity.type === "STREAMING" && newPresence.user.id === "279786331465318401") {
     const guild = bot.guilds.get("515339083946393601");
     if (guild) {
@@ -333,7 +333,7 @@ bot.on('ready', async () => {
       channel.send(`Hey @everyone, Wilted15 is now live on https://twitch.tv/wilted15, Go check it out!`)
     } 
   }
-})*/
+})
 
 bot.on('guildMemberAdd', async member => {
 	const muted = await bot.getAction(member.user.id, member.guild.id);
