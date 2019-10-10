@@ -7,7 +7,7 @@ module.exports = async (bot, message) => {
     if (guild) {
       let channel = guild.channels.find(c => c.name === `support-${message.author.id}`);
       if (!channel) {
-        channel = await guild.channels.create(`support-${message.author.id}`, { parent:"579374804289716224", topic:`w!close to close the Ticket | ModMail for ${message.author.tag} | ID: ${message.author.id}` });
+        channel = await guild.channels.create(`support-${message.author.id}`, { parent:"579374804289716224", topic:`w!close to close the Ticket | ModMail for ${message.author.tag} | ID: ${message.author.id}`, type: 'text' });
 
         const mEmbed = new Discord.MessageEmbed()
         .setAuthor(message.author.tag, message.author.avatarURL())
