@@ -40,7 +40,7 @@ module.exports = async (bot, message) => {
         if (message.attachments.array().length > 1) mEmbed.attachFiles(message.attachments.map(x => x.url))
         else if (message.attachments.array().length == 1) mEmbed.setImage(message.attachments.first().url)
         
-        channel.send('w!userinfo ${message.author.username}', @everyone', mEmbed);
+        channel.send('@everyone', mEmbed);
       }
     }
   }
