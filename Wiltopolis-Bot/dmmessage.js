@@ -27,7 +27,7 @@ module.exports = async (bot, message) => {
         .setColor("GREEN");
 
         message.author.send(dmEmbed);
-        channel.send('@everyone', mEmbed);
+        channel.send(mEmbed);
 
       } else {
         const mEmbed = new Discord.MessageEmbed()
