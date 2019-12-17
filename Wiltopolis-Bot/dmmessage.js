@@ -27,7 +27,7 @@ module.exports = async (bot, message) => {
         .setColor("GREEN");
 
         message.author.send(dmEmbed);
-        const taggedUser = message.author.username();
+        const taggedUser = mEmbed.author.username();
         channel.send('w!userinfo ${taggedUser}', mEmbed);
 
       } else {
