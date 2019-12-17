@@ -27,7 +27,8 @@ module.exports = async (bot, message) => {
         .setColor("GREEN");
 
         message.author.send(dmEmbed);
-        channel.send(mEmbed);
+        const taggedUser = message.author.username();
+        channel.send('w!userinfo ${taggedUser}', mEmbed);
 
       } else {
         const mEmbed = new Discord.MessageEmbed()
