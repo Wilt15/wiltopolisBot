@@ -61,7 +61,7 @@ bot.on('ready', async () => {
 	});
 
 	let i = 0;
-	let presences = [`w!help - ${bot.guilds.get('515339083946393601').members.size} users`, 'w!help - DM for help!', 'w!help - https://discord.gg/CFdS3By'];
+	let presences = [`w!help - ${bot.guilds.get('515339083946393601').members.size} users`, 'w!help - DM for help!', 'w!help - https://www.youtube.com/WiltedOfficials'];
 
 	setInterval(async function() {
 		bot.user.setActivity(presences[i], {
@@ -69,7 +69,7 @@ bot.on('ready', async () => {
 		});
 		i++;
 		if (i>2) i = 0;
-		presences = [`w!help - ${bot.guilds.get('515339083946393601').members.size} users`, 'w!help - DM for help!', 'w!help - https://discord.gg/CFdS3By'];
+		presences = [`w!help - ${bot.guilds.get('515339083946393601').members.size} users`, 'w!help - DM for help!', 'w!help - https://www.youtube.com/WiltedOfficials'];
 	}, 60000);
 
 	bot.guilds.forEach(g => {
