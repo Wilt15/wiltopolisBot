@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Creator", "HeadTriXz#7760")
     .addField("Created On", dateFormat(bot.user.createdAt, "ddd, mmm dd, yyyy h:MM TT"))
     .addField("Updater", "Wilted#3634")
-    .addField("Updated On", dateFormat(bot.user.lastModified, "ddd, mmm dd, yyyy h:MM TT"))
+    .addField("Updated On", dateFormat(bot.user.lastModified, "ddd, mmm dd, yyyy"))
     .addField("Version", "v1.0.1")
     .addField("Discord", `[https://wedesign.com/invite](https://discord.gg/CFdS3By)`)
     .addField("Youtube", `[https://wiltedofficials.com](https://youtube.com/WiltedOfficials)`)
