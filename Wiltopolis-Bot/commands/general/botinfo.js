@@ -7,9 +7,12 @@ module.exports.run = async (bot, message, args) => {
     .setAuthor(bot.user.username, bot.user.avatarURL())
     .setColor("#056EF7")
     .addField("Creator", "HeadTriXz#7760")
-    .addField("Created At", dateFormat(bot.user.createdAt, "ddd, mmm dd, yyyy h:MM TT"))
+    .addField("Created On", dateFormat(bot.user.createdAt, "ddd, mmm dd, yyyy h:MM TT"))
+    .addField("Updater", "Wilted#3634")
+    .addField("Updated On", dateFormat(bot.user.lastModified, "ddd, mmm dd, yyyy h:MM TT"))
     .addField("Version", "v1.0.1")
     .addField("Discord", `[https://wedesign.com/invite](https://discord.gg/CFdS3By)`)
+    .addField("Youtube", `[https://wiltedofficials.com](https://youtube.com/WiltedOfficials)`)
     .addField("Uptime", `${timeObj.days}d ${timeObj.hours}h ${timeObj.minutes}m ${timeObj.seconds}s`)
 
   message.channel.send(botembed);
