@@ -34,7 +34,7 @@
     "quick.db": "^7.0.0-b19",
     "sequelize": "^4.42.0",
     "simple-youtube-api": "^5.1.1",
-    "ytdl-core": "^2.0.0"
+    "ytdl-core": "^2.1.4"
   },
   "devDependencies": {},
   "repository": {
